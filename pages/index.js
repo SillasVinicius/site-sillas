@@ -28,6 +28,9 @@ function HomePage() {
                <meta name="description" content="Portifólio Profissional do Sillas Vinícius Barbosa Braga" />
                <meta name="author" content="Sillas Vinícius" />
            </Head>
+           <style>{`
+                overflow-x: hidden;
+           `}</style>
            <Navbar color="dark" dark expand="md" className="fixed-top">
                <Container>
                     <NavbarBrand href="/"><FaCode /> Sillas Vinícius</NavbarBrand>
@@ -66,11 +69,15 @@ function HomePage() {
                             position: absolute;
                             top: 0px;
                         }
+
+                        .dev {
+                            font-size:45px
+                        }
                    `}
                </style>
                 <Container className="text-center">
                     <a name="inicio" className="inicio-link" />
-                    <h1 className="display-4 mb-4"><FaTerminal /> Desenvolvedor</h1>
+                    <p className="lead mb-4 dev"><FaTerminal /> Desenvolvedor</p>
                     <p className="lead mb-4">Quero trabalhar com os melhores profissionais, aprender e aprofundar na área de TI, através do trabalho em equipe e do convívio com pessoas qualificadas, buscando sempre evoluir.</p>
                     <p className="lead">
                         <a className="btn btn-outline-info btn-lg" href="/#rodape" role="button">ENTRE EM CONTATO</a>
@@ -120,7 +127,7 @@ function HomePage() {
                         <p className="lead pb-4">No que posso te ajudar ?</p>
                     </div>
                     <div className="row">
-                        <div className="col-lg-4">
+                        <div className="col-md-4">
                             <div className="rounded-circle circulo centralizar">
                                 <FaLaptop />
                                 <FaMobile />
@@ -128,14 +135,14 @@ function HomePage() {
                             <h2 className="mt-4 mb-4">Front-End</h2>
                             <p>Tenho conhecimento para desenvolver interfaces para web e para dispositivos móveis. Utilizando de tecnologias como Angular, Ionic, React e React-Native tendo um bom conhecimento de HTML, CSS e JavaScript.</p>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-md-4">
                             <div className="rounded-circle circulo centralizar">
                                 <FaServer/>
                             </div>
                             <h2 className="mt-4 mb-4" >Back-End</h2>
                             <p>Criação de API's que alimentam as interfaces com dados vindos diretamente do banco de dados. utilizando do Node.js e JavaScript para a criação desses sitemas.</p>
                         </div>
-                        <div className="col-lg-4">
+                        <div className="col-md-4">
                             <div className="rounded-circle circulo centralizar">
                                 <FaDatabase />
                             </div>
